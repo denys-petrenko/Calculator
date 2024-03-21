@@ -1,0 +1,120 @@
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #edf1f4;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 520px;
+    border-radius: 20px;
+    padding: 20px;
+    background: transparent;
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.1), -15px -15px 20px #fffb;
+    backdrop-filter: blur(8px);
+    position: fixed;
+}
+
+.outputHistory {
+    width: auto;
+    height: 20px;
+    border: none;
+    padding: 24px;
+    margin: 0 40px 0 40px;
+    background: transparent;
+    font-size: 20px;
+    text-align: left;
+    cursor: pointer;
+    color: rgb(240, 162, 67);
+    overflow: hidden;
+}
+
+.output {
+    width: auto;
+    height: 30px;
+    border: none;
+    padding: 24px;
+    background: transparent;
+    font-size: 40px;
+    text-align: right;
+    cursor: pointer;
+    color: rgb(72, 91, 199);
+    margin: 0 40px 0 40px;
+    overflow: hidden;
+}
+
+.keys {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 25px;
+}
+
+.number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    font-size: 50px;
+    background-color: transparent;
+    color: rgb(72, 91, 199);
+    border: 0.1px solid rgb(139, 137, 137);
+}
+
+#zero {
+    width: 201px;
+}
+
+.number:hover {
+    transition: 0.3s;
+    color: gba(160, 178, 238, 0.204);
+    background-color: rgba(160, 178, 238, 0.204);
+}
+
+.operator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    cursor: pointer;
+    font-size: 50px;
+    background-color: rgba(160, 178, 238, 0.204);
+    color: rgb(72, 91, 199);
+    border: 0.1px solid rgb(139, 137, 137);
+}
+
+.operator:hover {
+    background-color: transparent;
+}
+
+#percent {
+    background-color: rgba(160, 178, 238, 0.204);
+    border: 0.1px solid rgb(139, 137, 137);
+    color: rgb(72, 91, 199);
+    cursor: pointer;
+}
+
+#percent:hover {
+    background-color: transparent;
+}
+
+#clear {
+    width: 201px;
+}
+
+#equals {
+    background-color: rgba(255, 179, 80, 0.311);
+}
+
+#equals:hover {
+    background-color: rgb(240, 162, 67);
+}
